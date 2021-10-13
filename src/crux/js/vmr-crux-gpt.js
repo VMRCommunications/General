@@ -63,10 +63,9 @@ googletag.cmd.push(function() {
   
   
   
-  
-  
+
   // event listener for  
-  var targetSlot = ...;
+  var targetSlot = 'CruxNow.com_New_300x250';
 googletag.pubads().addEventListener('slotOnload', function(event) {
   if (event.slot === targetSlot) {
     // Slot specific logic.
@@ -74,8 +73,6 @@ googletag.pubads().addEventListener('slotOnload', function(event) {
   console.log(event);
   }
 });
-  
-  
   
 
   
