@@ -58,6 +58,22 @@ googletag.cmd.push(function() {
     renderMarginPercent: RENDER_MARGIN_PERCENT,
     mobileScaling: MOBILE_SCALING
   });
+  
+  
+  
+
+  // event listener for  
+  var targetSlot = 'CruxNow.com_New_300x250';
+googletag.pubads().addEventListener('slotOnload', function(event) {
+  if (event.slot === targetSlot) {
+    // Slot specific logic.
+      console.log('Slot has been loaded:');
+  console.log(event);
+  }
+});
+  
+
+  
 
   // Set the slot to refresh if viewable
   googletag.pubads().addEventListener('impressionViewable', function(event) {
