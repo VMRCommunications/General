@@ -1,4 +1,4 @@
-  window.googletag = windowqq.googletag || {cmd: []};
+  window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
     googletag.defineSlot('/4580722/CatholicHerald_1', [[300,250],[160,600],[970,250],[336,280]], 'div-gpt-ad-4206571-1')
              .addService(googletag.pubads());
