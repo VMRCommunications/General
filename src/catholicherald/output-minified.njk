@@ -1,0 +1,8 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /catholicherald/dist/js/vmr-ch-gpt.min.js
+---
+{%- set js -%}
+    {% include "src/catholicherald/js/vmr-ch-gpt.js" %}
+{%- endset -%}
+{{ js | jsmin | safe }}
