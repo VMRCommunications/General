@@ -1,4 +1,4 @@
-// test 
+// test 123
 window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
     googletag.defineSlot('/270537003/TheTabletOtherFooter728', [728, 90], 'div-gpt-ad-1432670765502-0').addService(googletag.pubads());
