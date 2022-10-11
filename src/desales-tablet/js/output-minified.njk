@@ -1,8 +1,0 @@
----
-eleventyExcludeFromCollections: true
-permalink: /desales/dist/js/tablet-gam-home.min.js
----
-{%- set js -%}
-    {% include "src/desales/js/tablet-gam-home.js" %}
-{%- endset -%}
-{{ js | jsmin | safe }}
