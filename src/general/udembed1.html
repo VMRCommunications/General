@@ -1,3 +1,41 @@
+<script>
+var monitor = setInterval(function(){
+    var elem = document.activeElement;
+    if(elem && elem.tagName == 'IFRAME'){
+        processIframeClick();
+    }
+}, 1000);
+
+let currentStyle="";
+let inPaySecurelyScreen=false;
+function processIframeClick(){
+    var myIframe=document.querySelector('[title="Donation Form"]');
+    console.log(myIframe.style.minHeight.toString());
+    if(currentStyle==""){
+        console.log(myIframe);
+        currentStyle=myIframe.style.minHeight.toString();
+        console.log("test");
+    }
+    if(myIframe.style.minHeight.toString()!=currentStyle && myIframe.style.minHeight.toString().includes("14")  && inPaySecurelyScreen==false){
+        console.log("Clicked pay securely button");
+        currentStyle=myIframe.style.minHeight.toString();
+        inPaySecurelyScreen=true;
+    }
+    if(myIframe.style.minHeight.toString()!=currentStyle && inPaySecurelyScreen==true){
+        console.log("Done");
+        doPopupRedirect();
+        clearInterval(monitor)
+    }
+}
+
+function doPopupRedirect(){
+    window.parent.postMessage({
+        'func': 'parentFunc'
+    }, "*");
+    console.log("sent post msg");
+}
+</script>
+
 <div id="blackbaud-donation-form_91b461ef-1f14-4860-94bb-887675984ae6" style="text-align: center;">&nbsp;</div>
 <script src="https://sky.blackbaudcdn.net/static/donor-form-loader/1/main.js"></script>
 <script>BBDonorFormLoader.newBlackbaudDonationFormZoned('renxt', 'p-jyT-KAq0V0at-blmNVBcvA', '91b461ef-1f14-4860-94bb-887675984ae6', 'usa')</script>
