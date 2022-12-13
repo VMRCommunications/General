@@ -1,12 +1,11 @@
-<!--
 <script>
-var monitor = setInterval(function(){
+var monitor=null;
+setTimeout(function(){monitor = setInterval(function(){
     var elem = document.activeElement;
     if(elem && elem.tagName == 'IFRAME'){
-        processIframeClick();
+        processIframeClick()
     }
-}, 1000);
-
+}, 1000);},12000);
 let currentStyle="";
 let inPaySecurelyScreen=false;
 function processIframeClick(){
@@ -17,7 +16,7 @@ function processIframeClick(){
         currentStyle=myIframe.style.minHeight.toString();
         console.log("test");
     }
-    if(myIframe.style.minHeight.toString()!=currentStyle && myIframe.style.minHeight.toString().includes("14")  && inPaySecurelyScreen==false){
+    if(myIframe.style.minHeight.toString()!=currentStyle && parseFloat((parseFloat(currentStyle)-parseFloat(myIframe.style.minHeight.toString())).toString().replace("-","")) >= 50 && inPaySecurelyScreen==false){
         console.log("Clicked pay securely button");
         currentStyle=myIframe.style.minHeight.toString();
         inPaySecurelyScreen=true;
@@ -36,7 +35,6 @@ function doPopupRedirect(){
     console.log("sent post msg");
 }
 </script>
--->
 
 <div id="blackbaud-donation-form_91b461ef-1f14-4860-94bb-887675984ae6" style="text-align: center;">&nbsp;</div>
 <script src="https://sky.blackbaudcdn.net/static/donor-form-loader/1/main.js"></script>
