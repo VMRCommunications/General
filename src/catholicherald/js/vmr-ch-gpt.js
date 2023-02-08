@@ -16,7 +16,7 @@ googletag.cmd.push(function() {
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_8', ['fluid',[300,250]], 'CH003')
            .addService(googletag.pubads());
-    googletag.defineSlot('/4580722/CatholicHerald_9', ['fluid',[300,250],[301,250]], 'CH004-Top')
+    googletag.defineSlot('/4580722/CatholicHerald_9', ['fluid',[300,250],[302,250]], 'CH004-Top')
            .addService(googletag.pubads());
     googletag.defineSlot('/4580722/CatholicHerald_10', ['fluid',[300,250]], 'CH004-Bottom')
            .addService(googletag.pubads());
