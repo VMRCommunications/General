@@ -12,15 +12,15 @@ googletag.cmd.push(function() {
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_6', 'fluid', 'CH001-Bottom')
            .addService(googletag.pubads());
-  googletag.defineSlot('/4580722/CatholicHerald_7', 'fluid', 'CH002')
+  googletag.defineSlot('/4580722/CatholicHerald_7', ['fluid',[300,250]], 'CH002')
            .addService(googletag.pubads());
-  googletag.defineSlot('/4580722/CatholicHerald_8', 'fluid', 'CH003')
+  googletag.defineSlot('/4580722/CatholicHerald_8', ['fluid',[300,250]], 'CH003')
            .addService(googletag.pubads());
     googletag.defineSlot('/4580722/CatholicHerald_9', 'fluid', 'CH004-Top')
            .addService(googletag.pubads());
     googletag.defineSlot('/4580722/CatholicHerald_10', 'fluid', 'CH004-Bottom')
            .addService(googletag.pubads());
-    googletag.defineSlot('/4580722/CatholicHerald_11', 'fluid', 'CH005')
+    googletag.defineSlot('/4580722/CatholicHerald_11', ['fluid',[300,250]], 'CH005')
            .addService(googletag.pubads());
   googletag.pubads().enableSingleRequest();
   googletag.enableServices();
