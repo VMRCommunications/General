@@ -6,7 +6,7 @@ googletag.cmd.push(function() {
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_3', ['fluid',[300,250],[336,280],[160,600],[970,250]], 'div-gpt-ad-4206571-3')
            .addService(googletag.pubads());
-  googletag.defineSlot('/4580722/CatholicHerald_4', ['fluid',[300,250],[336,280],[160,600],[970,250]], 'div-gpt-ad-4206571-4')
+  googletag.defineSlot('/4580722/CatholicHerald_4', 'fluid', 'div-gpt-ad-4206571-4')
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_5', 'fluid', 'CH001-Top')
            .addService(googletag.pubads());
