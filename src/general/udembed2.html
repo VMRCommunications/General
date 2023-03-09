@@ -1,0 +1,44 @@
+<!--
+<script>
+var monitor=null;
+setTimeout(function(){monitor = setInterval(function(){
+    var elem = document.activeElement;
+    if(elem && elem.tagName == 'IFRAME'){
+        processIframeClick()
+    }
+}, 1000);},12000);
+let currentStyle="";
+let inPaySecurelyScreen=false;
+function processIframeClick(){
+    var myIframe=document.querySelector('[title="Donation Form"]');
+    console.log(myIframe.style.minHeight.toString());
+    if(currentStyle==""){
+        console.log(myIframe);
+        currentStyle=myIframe.style.minHeight.toString();
+        console.log("test");
+    }
+    if(myIframe.style.minHeight.toString()!=currentStyle && parseFloat((parseFloat(currentStyle)-parseFloat(myIframe.style.minHeight.toString())).toString().replace("-","")) >= 50 && inPaySecurelyScreen==false){
+        console.log("Clicked pay securely button");
+        currentStyle=myIframe.style.minHeight.toString();
+        inPaySecurelyScreen=true;
+    }
+    if(myIframe.style.minHeight.toString()!=currentStyle && inPaySecurelyScreen==true){
+        console.log("Done");
+        doPopupRedirect();
+        clearInterval(monitor)
+    }
+}
+
+function doPopupRedirect(){
+    window.parent.postMessage({
+        'func': 'parentFunc'
+    }, "*");
+    console.log("sent post msg");
+}
+</script>
+-->
+
+
+<div id="blackbaud-donation-form_ff1c3b4b-e674-446f-874d-40ff752a9a46"></div>
+<script src="https://sky.blackbaudcdn.net/static/donor-form-loader/1/main.js"></script>
+<script>BBDonorFormLoader.newBlackbaudDonationFormZoned('renxt', 'p-jyT-KAq0V0at-blmNVBcvA', 'ff1c3b4b-e674-446f-874d-40ff752a9a46', 'usa')</script>
