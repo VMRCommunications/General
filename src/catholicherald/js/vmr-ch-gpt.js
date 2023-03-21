@@ -25,4 +25,4 @@ googletag.cmd.push(function() {
 //  googletag.pubads().enableSingleRequest(); 
   googletag.enableServices();
 });
-document.getElementById("CH002").style.maxWidth = "350px";
+document.getElementById("CH002").style.maxWidth = "350px !important";
