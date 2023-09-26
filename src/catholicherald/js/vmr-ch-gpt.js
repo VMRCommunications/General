@@ -22,8 +22,6 @@ googletag.cmd.push(function() {
            .addService(googletag.pubads());
     googletag.defineSlot('/4580722/CatholicHerald_11', ['fluid',[300,250]], 'CH005')
            .addService(googletag.pubads());
-      googletag.defineSlot('/4580722/CatholicHerald_12', ['fluid',[300,250]], 'CH006')
-           .addService(googletag.pubads());
 //  googletag.pubads().enableSingleRequest(); 
   googletag.enableServices();
 });
