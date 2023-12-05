@@ -25,4 +25,3 @@ googletag.defineSlot('/4580722/CatholicHerald_9', ['fluid',[300,250],[302,250]],
  googletag.pubads().enableSingleRequest(); 
   googletag.enableServices();
 });
-document.getElementById("CH002").style.width = "300px !important";
