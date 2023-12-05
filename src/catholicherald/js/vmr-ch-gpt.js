@@ -2,6 +2,8 @@ window.googletag = window.googletag || {cmd: []};
 googletag.cmd.push(function() {
 googletag.defineSlot('/4580722/CatholicHerald_7', ['fluid',[300,250]], 'CH002')
            .addService(googletag.pubads());
+googletag.defineSlot('/4580722/CatholicHerald_5', [[728,90]], 'CH001-Top')
+           .addService(googletag.pubads());
 googletag.defineSlot('/4580722/CatholicHerald_8', ['fluid',[300,250]], 'CH003')
            .addService(googletag.pubads());
 googletag.defineSlot('/4580722/CatholicHerald_11', ['fluid',[300,250]], 'CH005')
@@ -13,8 +15,6 @@ googletag.defineSlot('/4580722/CatholicHerald_9', ['fluid',[300,250],[302,250]],
   googletag.defineSlot('/4580722/CatholicHerald_3', ['fluid',[300,250],[336,280],[160,600],[970,250]], 'div-gpt-ad-4206571-3')
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_4', [[728,90]], 'div-gpt-ad-4206571-4')
-           .addService(googletag.pubads());
-  googletag.defineSlot('/4580722/CatholicHerald_5', [[728,90]], 'CH001-Top')
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_6', [[728,90]], 'CH001-Bottom')
            .addService(googletag.pubads());
