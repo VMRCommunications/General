@@ -1,8 +1,8 @@
 window.googletag = window.googletag || {cmd: []};
 googletag.cmd.push(function() {
   var mapping1 = googletag.sizeMapping()
-                            .addSize([1000, 1000], [[728, 90]])
-    .addSize([300, 100], [[320, 50]])
+                            .addSize([1000, 500], [[728, 90]])
+    .addSize([300, 500], [[320, 50]])
     .addSize([0, 0], [])
                             .build();                         
   googletag.defineSlot('/4580722/CatholicHerald_4', [[728,90],[320,50]], 'div-gpt-ad-4206571-4')
