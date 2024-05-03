@@ -2,7 +2,7 @@ window.googletag = window.googletag || {cmd: []};
 googletag.cmd.push(function() {
   var mapping1 = googletag.sizeMapping()
                             .addSize([1000, 0], [[728, 90]])
-    .addSize([300, 0], [[320, 50]])
+    .addSize([301, 0], [[320, 50]])
     .addSize([0, 0], [])
                             .build();                         
   googletag.defineSlot('/4580722/CatholicHerald_4', [[728,90],[320,50]], 'div-gpt-ad-4206571-4')
@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Apply padding using JavaScript
     defaultInput.style.padding = '10px 20px';
 
-    // Check if the viewport width is less than or equal to 1050px
-    if (window.innerWidth <= 1050) {
+    // Check if the viewport width is less than or equal to 380px
+    if (window.innerWidth <= 380) {
         // Select the element with class ".header--bottom__mobile--search"
         const mobileSearch = document.querySelector('.header--bottom__mobile--search');
 
