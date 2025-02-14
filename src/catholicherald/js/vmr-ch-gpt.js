@@ -2,7 +2,7 @@ window.googletag = window.googletag || {cmd: []};
 googletag.cmd.push(function() {
   var mapping1 = googletag.sizeMapping()
                             .addSize([1000, 0], [[728, 90]])
-    .addSize([302, 0], [[320, 50]])
+    .addSize([303, 0], [[320, 50]])
     .addSize([0, 0], [])
                             .build();                         
   googletag.defineSlot('/4580722/CatholicHerald_4', [[728,90],[320,50]], 'div-gpt-ad-4206571-4')
