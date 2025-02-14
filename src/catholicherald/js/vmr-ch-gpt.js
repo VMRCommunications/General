@@ -8,7 +8,6 @@ googletag.cmd.push(function() {
   googletag.defineSlot('/4580722/CatholicHerald_4', [[728,90],[320,50]], 'div-gpt-ad-4206571-4')
     .defineSizeMapping(mapping1)
            .addService(googletag.pubads());
-/*
   googletag.defineSlot('/4580722/CatholicHerald_5', [[728,90]], 'CH001-Top')
            .addService(googletag.pubads());
 googletag.defineSlot('/4580722/CatholicHerald_8', ['fluid',[300,250]], 'CH003')
@@ -29,7 +28,6 @@ googletag.defineSlot('/4580722/CatholicHerald_9', ['fluid',[300,250],[302,250]],
            .addService(googletag.pubads());
   googletag.defineSlot('/4580722/CatholicHerald_1', [[300,250],[160,600],[970,250],[336,280]], 'div-gpt-ad-4206571-1')
            .addService(googletag.pubads());
-           */
  googletag.pubads().enableSingleRequest(); 
   googletag.enableServices();
 });
